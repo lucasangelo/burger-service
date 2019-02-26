@@ -2,6 +2,7 @@ CREATE TABLE IF NOT EXISTS ingredient(
     id      INTEGER     NOT NULL    AUTO_INCREMENT,
     name    VARCHAR(45) NOT NULL,
     price   FLOAT       NOT NULL,
+    type    VARCHAR(45),
     PRIMARY KEY(id)
 );
 

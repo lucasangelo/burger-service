@@ -12,6 +12,7 @@ public class Ingredient {
     private Integer id;
     private String name;
     private Float price;
+    private IngredientType type;
 
     public Integer getId() {
         return id;
@@ -35,5 +36,13 @@ public class Ingredient {
 
     public void setPrice(Float price) {
         this.price = price;
+    }
+
+    public IngredientType getType() {
+        return type;
+    }
+
+    public void setType(IngredientType type) {
+        this.type = type;
     }
 }

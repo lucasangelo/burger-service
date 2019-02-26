@@ -15,6 +15,10 @@ public class BurgerIngredientId implements Serializable {
     @JoinColumn(name = "ingredient_id")
     private Ingredient ingredient;
 
+    public BurgerIngredientId(){
+
+    }
+
     public BurgerIngredientId(Burger burger, Ingredient ingredient) {
         this.burger = burger;
         this.ingredient = ingredient;
