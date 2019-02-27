@@ -1,9 +1,6 @@
 package br.com.lucasangelo.burgerservice.model;
 
-import javax.persistence.Entity;
-import javax.persistence.GeneratedValue;
-import javax.persistence.GenerationType;
-import javax.persistence.Id;
+import javax.persistence.*;
 
 @Entity
 public class Ingredient {
@@ -12,6 +9,8 @@ public class Ingredient {
     private Integer id;
     private String name;
     private Float price;
+
+    @Enumerated(value = EnumType.STRING)
     private IngredientType type;
 
     public Integer getId() {

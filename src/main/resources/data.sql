@@ -1,7 +1,7 @@
 INSERT IGNORE INTO ingredient VALUES (1, "Alface", 0.40, "SALAD");
 INSERT IGNORE INTO ingredient VALUES (2, "Bacon", 2.00, "BACON");
 INSERT IGNORE INTO ingredient VALUES (3, "Hambúrguer de carne", 3.00, "MEAT");
-INSERT IGNORE INTO ingredient VALUES (4, "Ovo", 0.80, NULL);
+INSERT IGNORE INTO ingredient VALUES (4, "Ovo", 0.80, "EGG");
 INSERT IGNORE INTO ingredient VALUES (5, "Queijo", 1.50, "CHEESE");
 
 INSERT IGNORE INTO burger VALUES (1, "X-Bacon");

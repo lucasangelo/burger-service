@@ -41,3 +41,4 @@ public class BurgerIngredientId implements Serializable {
         this.ingredient = ingredient;
     }
 }
+
