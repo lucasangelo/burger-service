@@ -43,7 +43,7 @@ public class BurgerController {
         return ResponseEntity.ok(burgers);
     }
 
-    @RequestMapping(method = RequestMethod.POST, value = "/price")
+    @RequestMapping(method = RequestMethod.POST)
     public ResponseEntity calculatePrice(@RequestBody Iterable<IngredientRequest> ingredientRequest) {
         Float price = this.burgerService.calculatePrice(ingredientRequest);
         BurgerResponse burgerResponse = new BurgerResponse(this.ingredientService.listIngredients(ingredientRequest), price);
